@@ -17,5 +17,5 @@ use App\Http\Controllers\ProductsController;
 // Traditional routing way in laravel 8
 Route::get('/products', [ProductsController::class, 'index']);
 
-
-Route::get('/products/{name}', [ProductsController::class, 'show']);
+// Pattern must be an int
+Route::get('/products/{id}', [ProductsController::class, 'show'])->where('id', '[0-9]+');
