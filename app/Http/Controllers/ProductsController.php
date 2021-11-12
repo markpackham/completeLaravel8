@@ -15,16 +15,22 @@ class ProductsController extends Controller
             'productTwo' => 'Samsung',
         ];
 
-        // Compact method (good for passing in lots of variables)
-        // return view('products.index', compact('title', 'descriptions'));
-
-        // With method (good for passing one variable or array)
-        // return view('products.index')->with('title', $title);
-        // return view('products.index')->with('data', $data);
-
-        // Directly passed into view (ugly solution)
+        // Directly passed into view
         return view('products.index', [
             'data' => $data
+        ]);
+    }
+
+    public function show($name)
+    {
+        $data = [
+            'iphone' => 'iPhone',
+            'samsung' => 'Samsung',
+        ];
+
+        return view('products.index', [
+            // with ?? if option on left returns null then do option on right and say product does not exist
+            'products' => $data[$name] ?? 'Product ' . $name . ' does not exist.'
         ]);
     }
 }
