@@ -20,6 +20,11 @@ class ProductsController extends Controller
 
         // With method (good for passing one variable or array)
         // return view('products.index')->with('title', $title);
-        return view('products.index')->with('data', $data);
+        // return view('products.index')->with('data', $data);
+
+        // Directly passed into view (ugly solution)
+        return view('products.index', [
+            'data' => $data
+        ]);
     }
 }
