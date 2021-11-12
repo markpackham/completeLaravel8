@@ -8,17 +8,8 @@ class ProductsController extends Controller
 {
     public function index()
     {
-        $title = "Welcome to Laravel 8";
-        $descriptions = "Meow";
-        $data = [
-            'productOne' => 'iPhone',
-            'productTwo' => 'Samsung',
-        ];
-
         // Directly passed into view
-        return view('products.index', [
-            'data' => $data
-        ]);
+        return view('products.index', []);
     }
 
     public function show($name)
