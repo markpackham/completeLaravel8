@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/users', function () {
+    return 'Welcome to the users page';
+});
+
+
+// Laravel automatically converts arrays into JSON response
+Route::get('/users', function () {
+    return ['PHP', 'HTML', 'Laravel'];
+});
+
+
+Route::get('/users', function () {
+    return response()->json([
+        'name' => 'Jimmy',
+        'course' => 'Laravel Learners'
+    ]);
+});
+
+
+Route::get('/users', function () {
+    return redirect('/');
+});
