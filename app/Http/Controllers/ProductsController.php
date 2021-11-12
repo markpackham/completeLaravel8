@@ -8,11 +8,18 @@ class ProductsController extends Controller
 {
     public function index()
     {
-        return view('products.index');
-    }
+        $title = "Welcome to Laravel 8";
+        $descriptions = "Meow";
+        $data = [
+            'productOne' => 'iPhone',
+            'productTwo' => 'Samsung',
+        ];
 
-    public function about()
-    {
-        return "About us page";
+        // Compact method (good for passing in lots of variables)
+        // return view('products.index', compact('title', 'descriptions'));
+
+        // With method (good for passing one variable or array)
+        // return view('products.index')->with('title', $title);
+        return view('products.index')->with('data', $data);
     }
 }
