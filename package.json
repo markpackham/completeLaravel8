@@ -20,6 +20,8 @@
         "postcss-import": "^14.0.2",
         "postcss-nested": "^5.0.6",
         "resolve-url-loader": "^4.0.0",
+        "sass": "^1.43.4",
+        "sass-loader": "^12.3.0",
         "tailwindcss": "^2.2.19",
         "vue-template-compiler": "^2.6.14"
     }
