@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Personal Website - Code With Dary
     </title>
-    <link
-        rel="stylesheet"
-        href="style.css"
-    />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
 </head>
 
 <body>
@@ -26,11 +18,8 @@
         <nav class="top-menu-container">
             <div class="logo-header">
                 <a href="">
-                    <img
-                    src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_960_720.png"
-                    alt="Logo personal portfolio"
-                    title="Logo personal portfolio"
-                    />
+                    <img src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_960_720.png"
+                        alt="Logo personal portfolio" title="Logo personal portfolio" />
                 </a>
             </div>
 
@@ -51,7 +40,8 @@
     <!-- Hero background & content on top of hero background -->
     <div id="hero-container">
         <div class="hero-wrapper">
-            <h1>Multi-Disciplinary <br> <span class="line">Designer</span> <span class="orange-txt">Developer</span></h1>
+            <h1>Multi-Disciplinary <br> <span class="line">Designer</span> <span
+                    class="orange-txt">Developer</span></h1>
 
             <div class="btn-wrapper">
                 <a href="">Let's connect</a>
@@ -125,7 +115,8 @@
             </h3>
 
             <p>
-                Whether you require distribution or fulfillment, defined freight forwarding, or a complete supply chain solution, we are here for you.
+                Whether you require distribution or fulfillment, defined freight forwarding, or a complete supply chain
+                solution, we are here for you.
             </p>
 
             <div class="btn-wrapper">
@@ -190,15 +181,13 @@
     <!-- Footer -->
     <footer>
         <div class="container-footer">
-            <img
-                src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_960_720.png"
-                alt="Logo personal portfolio"
-                title="Logo personal portfolio"
-                />
+            <img src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_960_720.png"
+                alt="Logo personal portfolio" title="Logo personal portfolio" />
             <p>
                 This website is created by Code With Dary
             </p>
         </div>
     </footer>
 </body>
+
 </html>
