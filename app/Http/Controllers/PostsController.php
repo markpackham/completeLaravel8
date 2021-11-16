@@ -11,8 +11,7 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            ->where('created_at', '>', now()->subDay())
-            ->orWhere('title', 'Meow')
+            ->whereBetween('id', [0, 10000000])
             ->get();
 
         dd($posts);
