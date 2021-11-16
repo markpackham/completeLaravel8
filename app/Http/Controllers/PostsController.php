@@ -9,12 +9,10 @@ class PostsController extends Controller
 {
     public function index()
     {
-        $id = 3;
+        $id = 5;
         $posts = DB::table('posts')
             ->where('id', '=', $id)
-            ->update([
-                'title' => 'Meow meow meow'
-            ]);
+            ->delete();
         dd($posts);
     }
 }
