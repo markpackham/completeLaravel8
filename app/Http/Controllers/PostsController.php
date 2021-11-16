@@ -11,11 +11,10 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            // ->max('id');
-            // ->avg('id');
-            // ->sum('id');
-            ->where('id', $id)
-            ->count();
+            ->insert([
+                'title' => 'New Post',
+                'body' => 'New Body'
+            ]);
         dd($posts);
     }
 }
