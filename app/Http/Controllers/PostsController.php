@@ -11,9 +11,9 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            ->insert([
-                'title' => 'New Post',
-                'body' => 'New Body'
+            ->where('id', '=', $id)
+            ->update([
+                'title' => 'Meow meow meow'
             ]);
         dd($posts);
     }
