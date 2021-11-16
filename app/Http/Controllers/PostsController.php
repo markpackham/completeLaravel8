@@ -11,7 +11,9 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            ->whereNotNull('title')
+            // never use ->whereRaw() unless you want hackers to do SQL injections
+            ->select('title')
+            ->distinct()
             ->get();
 
         dd($posts);
