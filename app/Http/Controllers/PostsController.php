@@ -11,7 +11,9 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            ->orderBy('title', 'asc')
+            // ->latest()
+            // ->oldest()
+            ->inRandomOrder()
             ->get();
 
         dd($posts);
