@@ -11,9 +11,11 @@ class PostsController extends Controller
     {
         $id = 3;
         $posts = DB::table('posts')
-            // ->orderBy('created_at', 'DESC')
-            // ->first();
-            ->find($id);
+            // ->max('id');
+            // ->avg('id');
+            // ->sum('id');
+            ->where('id', $id)
+            ->count();
         dd($posts);
     }
 }
